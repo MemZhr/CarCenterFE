@@ -1,0 +1,52 @@
+.centers-list {
+    list-style-type: none;
+    padding: 0;
+    width: 40%;
+}
+
+.center-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+  margin-top: 2%;
+    width: 100%; /* Full width for each item */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    text-align: center; /* Center text content */
+    border-radius: 5px;
+}
+
+.center-details {
+    margin-bottom: 10px; /* Add margin between text and image */
+}
+
+.center-name {
+    font-weight: bold;
+}
+
+.center-image img {
+    width: 250px; /* Set the width of the image */
+    height: 150px; /* Set the height of the image */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px; /* To make the image circular, if desired */
+}
+.centers-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.form-wrapper {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .form-wrapper.visible {
+    max-height: 500px; /* Set the maximum height you want when expanded */
+  }
+  img{
+    margin-bottom: 2px;
+  }
+  .AddingCenter{
+    text-align: center;
+  }

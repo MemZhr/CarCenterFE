@@ -1,0 +1,47 @@
+#nav-bar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  background-color: #2C3639; /* Change this to your desired background color */
+  margin: auto;
+}
+
+#nav-bar li {
+  display: inline-block;
+ 
+}
+
+#nav-bar li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+#nav-bar li a:hover:not(.logo-link) {
+  background-color: #DCD7C9;
+  border-radius: 8%;
+}
+
+.right-side {
+  position: absolute;
+  right: 0;
+}
+
+.logo-link:hover {
+  background-color: transparent; /* Prevent background color change on image hover */
+}
+
+img {
+  height: 30px;
+  width: auto;
+  transition: transform 0.5s ease; /* Add a smooth transition on image hover */
+}
+
+.logo-link:hover img {
+  transform: scale(1.6); /* Increase the image size on hover */
+}

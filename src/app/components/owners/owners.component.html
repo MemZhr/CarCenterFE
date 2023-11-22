@@ -1,0 +1,24 @@
+<div class="owner-wrapper">
+  <div *ngFor="let ownerItem of owners" class="owner-details">
+    <h3>{{ ownerItem.name}}</h3>
+      <p>Owner ID: {{ ownerItem.ownerId }}</p>
+      <p>Name: {{ ownerItem.name }}</p>
+      <hr>
+      <div class="buttons">
+        <button class="btn btn-secondary" (click)="deleteOwner(ownerItem.ownerId)">Delete</button>
+      <button class="btn btn-secondary" (click)="toggleUpdate(ownerItem.ownerId)">Update</button>
+      <div class="form-wrapper" [ngClass]="{'visible': isUpdateVisible[ownerItem.ownerId]}">
+        <form class="UpadateOwner" (ngSubmit)="updateOwner(ownerItem.ownerId)" [formGroup]="ownerForm"> 
+                  <h3>update Center</h3>
+                  <input type="text" name="name" placeholder="Enter a name" formControlName="name">
+                  <br> <br>
+                  <input type="text" name="ownerId" placeholder="Enter an ownerId" formControlName="ownerId">
+                  <br> <br>
+                  <button class="btn btn-primary" type="submit">update Owner</button>
+                </form>
+              </div>
+      </div>
+      
+    </div>
+  </div>
+  

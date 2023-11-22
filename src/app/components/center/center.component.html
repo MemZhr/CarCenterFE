@@ -1,0 +1,40 @@
+<div class="AddingCenter">
+    <h5>Don't see your center? add it  <a routerLink="../addcenter">here</a></h5>
+</div>
+<div class="centers-wrapper">
+
+<ul class="centers-list">
+    <li *ngFor="let i of centerData">
+        <div class="center-item">
+            <div class="center-details">
+                <h4 class="center-name">{{ i.name }}</h4>
+                <p class="center-address">{{ i.address }}</p>
+                <p class="center-id">{{ i.centerId }}</p>
+            </div>
+            <div class="center-image">
+                <img src="assets/carGarage.jpg" alt="Center Image">
+            </div>
+            <div>
+                <button class="btn btn-secondary" (click)="deleteCenter(i.centerId)">Delete</button>
+                <button class="btn btn-secondary" (click)="toggleUpdate(i.centerId)">Update</button>
+                <div class="form-wrapper" [ngClass]="{'visible': isUpdateVisible[i.centerId]}">
+                    <form class="AddCenterForm" (ngSubmit)="updateCenter(i.centerId)" [formGroup]="centerForm"> 
+                <h3>update Center</h3>
+                <input type="text" name="name" placeholder="Enter a name" formControlName="name">
+                <br> <br>
+                <input type="text" name="Address" placeholder="Enter an Address" formControlName="address">
+                <br> <br>
+                <button class="btn btn-primary" type="submit">update Center</button>
+              </form>
+            </div>
+        </div>
+        </div>
+    </li>
+</ul>
+</div>
+
+
+
+
+
+

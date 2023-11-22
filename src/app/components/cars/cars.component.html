@@ -1,0 +1,13 @@
+<div class="wrapper">
+
+<div *ngFor="let car of Cars" class="car-details">
+    <h2>{{ car.name }}</h2>
+    <p><span>Make:</span> {{ car.make }}</p>
+    <p><span>Color:</span> {{ car.color }}</p>
+    <p><span>Owner:</span> {{ car.owner?.ownerId || 'N/A' }}</p>
+    <p><span>Status:</span> {{ car.status }}</p>
+    <p><span>VIN:</span> {{ car.vin }}</p>
+    <p><span>Year:</span> {{ car.year }}</p>
+    <hr>
+</div>
+</div>

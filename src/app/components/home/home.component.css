@@ -1,0 +1,16 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+#MainLogo {
+    height: 40%;
+    width: 45%;
+    opacity: 0.7;
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+  }
+  
+  #MainLogo:hover {
+    transform: scale(1.1); /* Scale the logo on hover */
+    opacity: 1;
+  }
+  

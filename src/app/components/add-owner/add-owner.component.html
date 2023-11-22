@@ -1,0 +1,9 @@
+<form class="AddOwnerForm" (ngSubmit)="onSubmit()" [formGroup]="ownerForm"> 
+    <h3>Add new Center</h3>
+    <input type="text" name="name" placeholder="Enter a name" formControlName="name">
+    <br> <br>
+    <input type="number" name="centerId" placeholder="Enter a centerId" formControlName="centerId">
+    <br> <br>
+    <button type="submit">Add New Center</button>
+  </form>
+  

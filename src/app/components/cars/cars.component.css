@@ -1,0 +1,35 @@
+/* Style for the car details container */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Optional: Center horizontally */
+  }
+  
+  .car-details {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    margin-top: 2%;
+  }
+  
+  /* Style for the car name */
+  .car-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for car property labels */
+  .car-details p {
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+  /* Style for car property values */
+  .car-details p span {
+    font-weight: normal;
+    color: #333;
+  }
+  

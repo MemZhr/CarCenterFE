@@ -1,0 +1,11 @@
+.Background{
+    position: absolute;
+    z-index: -1;
+    opacity: 3%;
+   width: 100%;
+   height:max-content;
+}
+img{
+    object-fit:contain;
+    
+}
