@@ -1,3 +1,5 @@
+
+
 # DriveTune
 
 <a name="readme-top"></a>
@@ -40,9 +42,10 @@ Welcome to DriveTune , this project aims to provide an online car center for cus
 
 ### Built With
 
-* [![Typescript][typescript.com]][typescript-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+[![Typescript](https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+
 
 ### Back-end Repository
 [BACKEND](https://github.com/MemZhr/CarCenterBE)
@@ -90,12 +93,14 @@ sh
    
 sh
    npm run start
-   ```
+   ``
 
 
    ### Demo
 
-   ![Demo](https://www.youtube.com/watch?v=5OxGuZE8B58)
+[![Demo](https://img.youtube.com/vi/5OxGuZE8B58/0.jpg)](https://www.youtube.com/watch?v=5OxGuZE8B58)
+
+
 
    [DriveTune](https://drivetune.netlify.app/)
 
@@ -147,7 +152,9 @@ Explore the different features of the DriveTune:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
+[![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
 
-[Bootstrap.com]:
+
+
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+
