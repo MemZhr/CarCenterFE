@@ -116,7 +116,7 @@ sh
 
 Explore the different features of the DriveTune:
 
-* login: /
+* login: /login
 * Home: /home
 * center: /center
 * owners: /owners
