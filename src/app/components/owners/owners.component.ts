@@ -16,7 +16,7 @@ owners: Owner[]=[]
 
 isUpdateVisible: { [key: string]: boolean } = {};
 
-
+Visible : boolean = false
 
 ownerNameControl = new FormControl("");
 ownerIdControl = new FormControl();
@@ -43,14 +43,16 @@ loadOwners(){
       this.owners=data
       
     })
+    this.isVisible()
   },3000);
+
 }
 
 updateOwner(id:number){
 this.owner.updateOwner(id,this.ownerForm.value).subscribe({
   next:(data)=>{
     console.log(data);
-    alert("Update Done successfully")
+    alert("Updated successfully")
     this.loadOwners()
     
   },
@@ -80,7 +82,12 @@ toggleUpdate(ownerId : number){
 deleteOwner(id:number){
 this.owner.deleteOwner(id).subscribe((data)=>{
   console.log(data);
-  
+  alert("Deleted successfully !")
+  this.loadOwners()
+
 })
+}
+isVisible(){
+  this.Visible=!this.Visible
 }
 }

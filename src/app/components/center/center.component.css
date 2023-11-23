@@ -11,14 +11,14 @@
     border: 1px solid #ccc;
     padding: 10px;
   margin-top: 2%;
-    width: 100%; /* Full width for each item */
-    box-sizing: border-box; /* Include padding in the width calculation */
-    text-align: center; /* Center text content */
+    width: 100%; 
+    box-sizing: border-box; 
+    text-align: center; 
     border-radius: 5px;
 }
 
 .center-details {
-    margin-bottom: 10px; /* Add margin between text and image */
+    margin-bottom: 10px; 
 }
 
 .center-name {
@@ -26,10 +26,10 @@
 }
 
 .center-image img {
-    width: 250px; /* Set the width of the image */
-    height: 150px; /* Set the height of the image */
-    object-fit: cover; /* Maintain aspect ratio */
-    border-radius: 5px; /* To make the image circular, if desired */
+    width: 250px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 5px; 
 }
 .centers-wrapper {
     display: flex;
@@ -42,7 +42,7 @@
   }
   
   .form-wrapper.visible {
-    max-height: 500px; /* Set the maximum height you want when expanded */
+    max-height: 500px; 
   }
   img{
     margin-bottom: 2px;
@@ -50,3 +50,12 @@
   .AddingCenter{
     text-align: center;
   }
+  .Show {
+    display: block; 
+  }
+  
+
+  h5 {
+    display: none; 
+  }
+  

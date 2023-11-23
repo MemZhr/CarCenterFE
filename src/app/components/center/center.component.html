@@ -1,6 +1,8 @@
 <div class="AddingCenter">
-    <h5>Don't see your center? add it  <a routerLink="../addcenter">here</a></h5>
-</div>
+    <h5 *ngIf="Visible" [ngClass]="{'Show': isVisible}">
+        Don't see your center? add it <a routerLink="../addcenter">here</a>
+    </h5>
+    </div>
 <div class="centers-wrapper">
 
 <ul class="centers-list">

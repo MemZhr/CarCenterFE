@@ -19,7 +19,8 @@ export class CenterComponent implements OnInit {
   centerNameControl = new FormControl("");
   centerAddressControl = new FormControl("");
   
-  
+  Visible: boolean=false
+
   // centerForm to store input from user
   centerForm = new FormGroup({
     name : this.centerNameControl,
@@ -56,14 +57,15 @@ loadCenters(){
 
       }
     })
-
+    this.isVisible()
   },3000);
+  
 }
 
   deleteCenter(id:number){
   this.centerService.deleteCenter(id).subscribe((data)=>{
     console.log(data);
-
+alert("Deleted successfully !")
     
   })
   this.loadCenters()
@@ -72,6 +74,8 @@ loadCenters(){
   updateCenter(id:number){
 this.centerService.updateCenter(id,this.centerForm.value).subscribe((data)=>{
   console.log(data);
+  alert("Updated successfully !")
+
   
 })
 this.loadCenters()
@@ -86,5 +90,7 @@ this.loadCenters()
     .filter(key => +key !== centerId)
     .forEach(key => this.isUpdateVisible[key] = false);
 }
-   
+isVisible(){
+this.Visible=!this.Visible
+}
 }

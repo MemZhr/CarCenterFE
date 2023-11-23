@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { RouterEvent } from '@angular/router';
+import { Router, RouterEvent } from '@angular/router';
 import { OwnerService } from 'src/app/service/owner.service';
 
 @Component({
@@ -12,13 +12,14 @@ export class AddOwnerComponent {
   ownerNameControl = new FormControl("");
   ownerIdControl = new FormControl();
   
-  // centerForm to store input from user
+  // to store input from user
   ownerForm = new FormGroup({
     name : this.ownerNameControl,
     ownerId:this.ownerIdControl,
     
   })
- constructor(private ownerService:OwnerService){
+
+ constructor(private ownerService:OwnerService,private router: Router){
 
  }
 
@@ -29,6 +30,7 @@ this.ownerService.addOwner(this.ownerForm.value).subscribe({
 next:(data)=>{
   console.warn(data);
   alert("successful adding !")
+  this.router.navigate(['/owners'])
 },
   error:(error)=>{
     console.log(error);
@@ -36,4 +38,7 @@ next:(data)=>{
   }
 })
   }
+
+
+
 }

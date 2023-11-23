@@ -1,5 +1,7 @@
 <div class="owner-wrapper">
-  <div *ngFor="let ownerItem of owners" class="owner-details">
+  <h5 *ngIf="Visible" [ngClass]="{'Show': isVisible}">
+    add new owner <a routerLink="../addowner">here</a>
+</h5>  <div *ngFor="let ownerItem of owners" class="owner-details">
     <h3>{{ ownerItem.name}}</h3>
       <p>Owner ID: {{ ownerItem.ownerId }}</p>
       <p>Name: {{ ownerItem.name }}</p>
