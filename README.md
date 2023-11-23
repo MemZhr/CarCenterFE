@@ -1,27 +1,155 @@
-# CarCenter
+# DriveTune
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
+<a name="readme-top"></a>
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Wireframe</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#back-end-repository">Back-end Repository</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#Demo">Demo</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#team-members">Team members</a></li>
+ 
+  </ol>
+</details>
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## About The Project
 
-## Code scaffolding
+Welcome to DriveTune , this project aims to provide an online car center for customers to track their repair status and order services.
+### Wireframe
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Running unit tests
+### Built With
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* [![Typescript][typescript.com]][typescript-url]
+* [![Angular][Angular.io]][Angular-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
-## Running end-to-end tests
+### Back-end Repository
+[BACKEND](https://github.com/MemZhr/CarCenterBE)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Further help
+## Getting Started
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To set up the project locally, follow these simple steps:
+
+### Prerequisites
+
+Make sure you have Node.js and npm (Node Package Manager) installed on your machine. If not, you can follow these steps:
+
+1. Install Node.js:
+
+   Download and install Node.js from the official website: [Node.js](https://nodejs.org/)
+
+2. Install Angular CLI:
+
+   Open a terminal and run the following command to install the Angular CLI globally:
+
+   
+sh
+   npm install -g @angular/cli
+
+### Installation
+
+1. **Clone the repo**
+   
+sh
+   git clone https://github.com/MemZhr/CarCenterFE
+   
+2. **Install NPM packages**
+   
+sh
+   npm install
+   
+3. **Run the Development Server:**
+   
+sh
+   ng serve
+   
+   or
+   
+sh
+   npm run start
+   ```
+
+
+   ### Demo
+
+   ![Demo](demo/ezgif.com-video-to-gif.gif)
+
+   [OtakuUnity](https://otakuunity.netlify.app/)
+
+
+   
+
+
+   ### Deploy
+   
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Usage
+
+Explore the different features of the DriveTune:
+
+* login: /
+* Home: /home
+* center: /center
+* owners: /owners
+* cars: /cars
+* addcenter: /addcenter
+* addowner: /addowner
+* Error: /error
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Features
+- [x] login: Gain access to browse the site.
+
+
+
+- [x] center: View, edit, delete details for all centers.
+    
+- [x] owners: View, edit, delete details for all owners.
+
+- [x] cars: View details for all cars.
+    
+- [x] addcenter: Add new car center to drivetune.
+
+- [x] addowner: Add new owner to drivetune.
+
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Team members
+
+- [Muhannad Alzahrani](https://github.com/MemZhr)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+
+[Bootstrap.com]:
