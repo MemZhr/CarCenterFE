@@ -95,9 +95,9 @@ sh
 
    ### Demo
 
-   ![Demo](demo/ezgif.com-video-to-gif.gif)
+   ![Demo](https://www.youtube.com/watch?v=5OxGuZE8B58)
 
-   [OtakuUnity](https://otakuunity.netlify.app/)
+   [DriveTune](https://drivetune.netlify.app/)
 
 
    
@@ -119,14 +119,12 @@ Explore the different features of the DriveTune:
 * cars: /cars
 * addcenter: /addcenter
 * addowner: /addowner
-* Error: /error
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Features
 - [x] login: Gain access to browse the site.
-
-
 
 - [x] center: View, edit, delete details for all centers.
     
