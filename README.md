@@ -34,7 +34,8 @@
 ## About The Project
 
 Welcome to DriveTune , this project aims to provide an online car center for customers to track their repair status and order services.
-### Wireframe
+(the projcet has the admin veiw for the current moment and more functions are going be added soon)
+
 
 
 
